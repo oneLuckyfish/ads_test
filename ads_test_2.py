@@ -64,39 +64,3 @@ if not os.path.exists(filename):
                             for query in queries
                             for year in years])
     results.to_csv(filename, index=False)
-
-# results = pd.read_csv("ADS_results.csv")
-# results = results.groupby(['keywords', 'year']).sum().reset_index()
-#
-# matplotlib.rc('axes', edgecolor='C7')
-# fig, ax = plt.subplots()
-#
-# for name, group in results.groupby('name'):
-#     if name in ['LAMOST', 'SDSS', 'SDSS_Official', 'SDSS Spectrum']:
-#         continue
-#     group.plot.line(x='year', y='pct', ax=ax, label=name, linewidth=3)
-#
-# ax.set(xlabel='Year of Publication',
-#        ylabel='Percent of Publications')
-#
-# # text annotations
-# leg = plt.legend(loc=2, fontsize=16)
-# leg.get_frame().set_alpha(0)
-# for i, text in enumerate(leg.get_texts()):
-#     text.set_color("C" + str(i))
-# plt.xlabel("Year of publication", color="C7", size=16)
-# plt.ylabel("Percent of publications", color="C7", size=16)
-#
-# # final layout options
-# plt.xticks(np.arange(1995, 2025, 5), color="C7")
-# plt.yticks(np.arange(0.0, 0.05, 0.01), color="C7")
-# plt.gca().set_xticks(np.arange(1995, 2020, 1), minor=True)
-# plt.gca().set_yticks(np.arange(0.0, 0.05, 0.002), minor=True)
-# plt.tick_params(which='minor', length=5, color="C7")
-# plt.tick_params(which='major', length=10, color="C7")
-# plt.gca().xaxis.set_ticks_position("both")
-# plt.gca().yaxis.set_ticks_position("both")
-# plt.grid(linestyle="dashed", linewidth=0.5)
-# plt.ylim(0.00, 0.03)
-# plt.tight_layout()
-# fig.savefig('ads-languages.png', transparent=True, dpi=300)
