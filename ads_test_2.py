@@ -10,7 +10,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
-token = 'qQUR0hOBQI4exzCbPqynFtoSjgBN3st1xZQluldp'
+token = '******'
 
 
 def query_counts(keywords, query, year, acknowledgements=False):
