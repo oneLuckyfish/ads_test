@@ -10,7 +10,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
-token = 'qQUR0hOBQI4exzCbPqynFtoSjgBN3st1xZQluldp'  # ads上获取的token，每个用户每天搜索次数有限制
+token = '********'  # ads上获取的token，每个用户每天搜索次数有限制
 
 
 def query_counts(keywords, query, year, acknowledgements=False):
